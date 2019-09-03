@@ -156,7 +156,7 @@ export default function Dashboard() {
             noWrap
             className={classes.title}
           >
-            Dashboard
+            Walmart Faultservice Dashboard
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -186,6 +186,19 @@ export default function Dashboard() {
           <Grid container spacing={3}>
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
+              <Paper className={fixedHeightPaper} />
+            </Grid>
+            {/* Recent Deposits */}
+            <Grid item xs={12} md={4} lg={3}>
+              <Paper className={fixedHeightPaper} />
+            </Grid>
+            {/* Recent Orders */}
+            <Grid item xs={12}>
+              <Paper className={classes.paper} />
+            </Grid>
+          </Grid>
+        </Container>
+        {/* <Copyright /> */}
               <Paper className={fixedHeightPaper}>
                 <Chart />
               </Paper>
